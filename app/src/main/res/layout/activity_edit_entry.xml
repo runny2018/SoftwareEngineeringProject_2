@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".EditEntryActivity"
+    android:layout_margin="20dp">
+
+    <TextView
+        android:id="@+id/editentry_nametextview"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Name"
+        android:textSize="24sp"
+        android:textColor="#000000"/>
+    <EditText
+        android:id="@+id/editentry_nameedittext"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/editentry_nametextview"
+        />
+
+    <TextView
+        android:layout_below="@id/editentry_nameedittext"
+        android:id="@+id/editentry_datetextview"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Date"
+        android:textSize="24sp"
+        android:textColor="#000000"/>
+    <EditText
+        android:id="@+id/editentry_dateedittext"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/editentry_datetextview"
+        />
+
+    <TextView
+        android:layout_below="@id/editentry_dateedittext"
+        android:id="@+id/editentry_compotextview"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Composition"
+        android:textSize="24sp"
+        android:textColor="#000000"/>
+    <EditText
+        android:id="@+id/editentry_compoedittext"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/editentry_compotextview"
+        />
+
+    <Button
+        android:id="@+id/editentry_saveentry"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Save"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentBottom="true"/>
+
+
+
+</RelativeLayout>
